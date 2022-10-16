@@ -3,7 +3,7 @@ public class Class09 {
 	  public static void main(String[] args) {
 		  Cbbb bb = new Cbbb();
 		  bb.show();
-//		  (c) 由子類別的display()改寫父類別的display() 在呼叫父類別的display()
+//		  (c) 由子類別的display()改寫父類別的display() 在呼叫子類別的display()
 	  }	  
 	}
 class Caaa{
