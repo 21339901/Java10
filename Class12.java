@@ -50,7 +50,7 @@ class CTriangle extends CShape{
 		length = a;
 	}
 	public double area() {
-		return (length*Math.pow(length,1/3)/2.0);
+		return (length*length*Math.pow(length,1/3)/2.0);
 	}
 }
 
