@@ -1,5 +1,5 @@
-package hibiki;
-public class Main {
+package Java10;
+public class Class12 {
 	  public static void main(String[] args) {
 		  CShape[] cs = new CShape[6];
 		  cs[0] = new CCircle(3);
