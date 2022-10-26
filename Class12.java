@@ -4,10 +4,10 @@ public class Main {
 		  CShape[] cs = new CShape[6];
 		  cs[0] = new CCircle(3);
 		  cs[1] = new CSquare(3);
-		  cs[2] = new CTriangle(3);
+		  cs[2] = new CTriangle(4,10);
 		  cs[3] = new CCircle(4);
 		  cs[4] = new CSquare(4);
-		  cs[5] = new CTriangle(4);
+		  cs[5] = new CTriangle(6,15);
 		  CShape.largest(cs);	  
 	  }	  
 	}
@@ -46,11 +46,13 @@ class CSquare extends CShape{
 }
 class CTriangle extends CShape{
 	int length;
-	public CTriangle(int a) {
+	int height;
+	public CTriangle(int a,int b) {
 		length = a;
+		height = b;
 	}
 	public double area() {
-		return (length*length*Math.pow(length,1/3)/2.0);
+		return (length * height / 2.0);
 	}
 }
 
